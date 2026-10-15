@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class InfiniteSeries {
+public class Gauss {
 	public static double gauss(int n, double x) {
 		double sum = 1;
 		double d0 = 1;
