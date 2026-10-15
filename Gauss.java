@@ -14,7 +14,6 @@ public class Gauss {
 				n0 = -1.0 * x * x * n0;
 			}
 		}
-		
 		return sum;
 	}
 	
