@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class FindRoot {
+public class Roots {
 	
 	public static double squareRoot(double a) {
 		double x = a / 2.0;
