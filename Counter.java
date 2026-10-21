@@ -13,13 +13,15 @@ public class Counter {
 	}
 	
 	public static boolean isolatedA(String str) {
-		for (int i = 1; i < str.length() - 1; i++) {\
+		boolean isIsolated = true;
+		for (int i = 1; i < str.length() - 1; i++) {
 			if (str.charAt(i) == 'a') {
 				if (str.charAt(i - 1) == 'a' || str.charAt(i + 1) == 'a') {
-					return false;
+					isIsolated = false;
 				}
 			}
-		}		
+		}
+		return isIsolated;		
 	}
 	
 	public static void main(String[] args) {
@@ -28,7 +30,7 @@ public class Counter {
 		System.out.print("Enter your sentence: ");
 		String str = in.nextLine();
 		
-		System.out.printf("There are %d a letters\n", countA(str));
-	
+		System.out.printf("There are %d \"a\"s\n", countA(str));
+		System.out.printf("The \"a\"s are isolated: %s", isolatedA(str));
 	}
 }
