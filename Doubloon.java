@@ -1,9 +1,19 @@
 import java.util.Scanner;
+
 public class Doubloon {
+	public static int countLetters(String str, int n) {
+		int count = 0;
+		String character = str.substring(n, n+1);
+		for (int i = n; i < str.length(); i++) {
+			if (str.substring(i, i+1) == character) {
+				count += 1;
+			}
+		}
+		return count;
+	}
 	public static boolean isDoubloon(String str) {
-		str = str.toLowerCase();
 		for (int i = 0; i < str.length(); i++) {
-			if (str.indexOf(str.charAt(i), i+1) == -1 && str.indexOf(str.charAt(i)) == i) {
+			if (countLetters(str, i) != 2) {
 				return false;
 			}
 		}
