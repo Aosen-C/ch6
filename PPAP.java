@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class PPAP {
-	public static String transformPPAP(String str) {
+	public static String ppap(String str) {
 		int indexOfComma = str.indexOf(',');
 		String object1 = str.substring(9, indexOfComma);
 		
@@ -18,6 +18,6 @@ public class PPAP {
 	System.out.print("Enter the line: ");
 	String str = in.nextLine();
 	
-	System.out.println(transformPPAP(str));
+	System.out.println(ppap(str));
 	}
 }
