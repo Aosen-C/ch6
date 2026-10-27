@@ -10,7 +10,7 @@ public class Scrabble {
 				if (index == letters.length() - 1) {
 					letters = letters.substring(0, index);
 				} else {
-				letters = letters.substring(0, index) + letters.substring(index + 1);
+					letters = letters.substring(0, index) + letters.substring(index + 1);
 				}
 			}
 		}
